@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>LOGIN - TravelWise</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="logo">
+            <i class='bx bxs-log-in'></i>
+        </div>
+        <h2>LOGIN</h2>
+        <form class="form">
+            <input type="text" placeholder="Nome de Usuário" id="text">
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" placeholder="Senha" id="password">
+            <button type="button" id="entrar">ENTRAR</button>
+        </form>
+        <footer>
+            Caso não tenha uma conta clique
+            <a href="https://123milhas.com/registrar">aqui.</a>
+        </footer>
+    </div>
+
+    <script>
+        var botao = document.getElementById("entrar");
+        botao.addEventListener("click", function () {
+            window.location.href = "../index.html";
+        });  
+    </script>
+
+</body>
+
+</html>

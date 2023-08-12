@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#countdown {
+  font-family: 'Orbitron', sans-serif;
+  color: red;
+  background-color: #333;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Estilos do header */
+header {
+  background-color: #f27a42;
+  padding: 20px;
+  color: #fff;
+}
+
+.logo:hover {
+  transform: scale(1.3);
+}
+
+.logo,
+ul {
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 1s;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #ffffff;
+  color: #333;
+}
+
+nav ul:hover {
+  transform: translateX(10px);
+}
+
+form {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+}
+
+input[type="text"] {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 28px;
+}
+
+button[type="submit"] {
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.banner-container {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  animation: marquee 10s linear infinite;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 6px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+button,
+select,
+input[type="date"] {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 28px;
+  margin: 5px;
+}
+
+p {
+  flex-basis: 100%;
+}
+
+button[type="button"] {
+  background-color: #f27a42;
+  color: #fff;
+}
+
+/* Estilos para o rodapé (opcional) */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}

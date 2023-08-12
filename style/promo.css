@@ -1,0 +1,150 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f27a42;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo:hover {
+    transform: scale(1.3);
+}
+
+.logo,
+ul {
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 1s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #ffffff;
+    color: #333;
+}
+
+nav ul:hover {
+    transform: translateX(10px);
+}
+
+form {
+    position: absolute;
+    top: 42px;
+    right: 20px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 28px;
+}
+
+button[type="submit"] {
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner-container {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    animation: marquee 10s linear infinite;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 6px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.promocao1 {
+    background-image: url(../img/curitiba1.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.promocao2 {
+    background-image: url(../img/gramado1.png);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.preco-original {
+    text-decoration: line-through;
+    color: red;
+    margin-bottom: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.535);
+    border-radius: 30px;
+}
+
+.preco-promocional {
+    color: green;
+    background-color: rgba(255, 255, 255, 0.535);
+    border-radius: 30px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 30px;
+}

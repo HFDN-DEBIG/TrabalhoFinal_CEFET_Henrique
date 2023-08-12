@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <title>TravelWise - Seu site de viagens</title>
+</head>
+
+<body>
+  <div id="countdown"></div>
+
+  <header>
+    <nav>
+      <img src="img/logo.png" alt="" class="logo" width="100">
+      <ul>
+        <li><a href="./html/promo.html">Promoções</a></li>
+        <li><a
+            href="https://123milhas.com/hoteis?adultos=2&bebes=0&checkin=20-08-2023&checkout=21-08-2023&criancas=0&id=1017081&localizacao=Belo%20Horizonte,%20Minas%20Gerais,%20Brasil&quartos=2&tipo=City&is_loyalty=0&search_id=3042040502">Hotéis</a>
+        </li>
+        <li><a href="./index.html">Voos</a></li>
+        <li><a href="https://123milhas.com/pacotes-de-viagem/">Pacotes</a></li>
+        <li><a href="html/login.html">LOGIN</a></li>
+      </ul>
+      <form action="processar_pesquisa.php" method="GET">
+        <input type="text" name="pesquisa" placeholder="Pesquisar Destino">
+        <button type="submit">&#128269;</button>
+      </form>
+    </nav>
+  </header>
+
+  <div class="banner-container">
+    <div class="banner">Somente HOJE: Pacotes para Recife-BA com 23% OFF!!!</div>
+  </div>
+
+  <main>
+    <section>
+      <h1>Passagens Aéreas</h1>
+      <button type="button">Ida e Volta</button>
+      <button type="button">Somente Ida</button>
+
+      <p>de onde você está saindo?</p>
+      <select id="opcoesOrigem">
+        <option value="">Selecione o aeroporto - Origem</option>
+        <option value="GRU">Aeroporto Internacional de Guarulhos (GRU)</option>
+        <option value="SDU">Aeroporto Santos Dumont (SDU)</option>
+        <option value="GIG">Aeroporto Internacional Galeão (GIG)</option>
+        <option value="GIG">Aeroporto Internacional Galeão (GIG)</option>
+        <option value="CGH">Aeroporto de Congonhas (CGH)</option>
+        <option value="BSB">Aeroporto Internacional de Brasília (BSB)</option>
+        <option value="VCP">Aeroporto Internacional de Viracopos (VCP)</option>
+        <option value="REC">Aeroporto Internacional de Recife (REC)</option>
+        <option value="CNF">Aeroporto Internacional de Confins (CNF)</option>
+      </select>
+      <p>para onde você está indo?</p>
+      <select id="opcoesDestino">
+        <option value="">Selecione o aeroporto - Destino</option>
+        <option value="GRU">Aeroporto Internacional de Guarulhos (GRU)</option>
+        <option value="SDU">Aeroporto Santos Dumont (SDU)</option>
+        <option value="GIG">Aeroporto Internacional Galeão (GIG)</option>
+        <option value="CGH">Aeroporto de Congonhas (CGH)</option>
+        <option value="BSB">Aeroporto Internacional de Brasília (BSB)</option>
+        <option value="VCP">Aeroporto Internacional de Viracopos (VCP)</option>
+        <option value="REC">Aeroporto Internacional de Recife (REC)</option>
+        <option value="CNF">Aeroporto Internacional de Confins (CNF)</option>
+      </select>
+      <p>Escolha as datas:</p>
+      <input type="date" id="data1" min="2023-08-12">
+      <input type="date" id="data2" min="2023-08-12">
+
+      <p>Pasageiros:</p>
+      <select id="opcoesPassageiros">
+        <option value="">Selecione a quantidade</option>
+        <option value="1">1 passageiro</option>
+        <option value="2">2 passageiros</option>
+        <option value="3">3 passageiros</option>
+        <option value="4">+4 passageiros</option>
+      </select>
+      <button id="buscarPassagens" type="button">Buscar Passagens</button>
+    </section>
+  </main>
+
+
+  <script src="script/index.js"></script>
+</body>
+
+</html>
